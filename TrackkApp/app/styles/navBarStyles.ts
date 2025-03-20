@@ -19,7 +19,7 @@ export const useNavBarStyles = () => {
     const navBarWidth = Math.ceil(width * 0.25);
 
     return {
-        containerClass: "flex-row w-full bg-[#f8f8f8] justify-center items-center px-4",
+        containerClass: "flex-row w-full bg-[#151621] justify-center items-center",
         containerStyle: { height: navBarHeight },
         textClass: `${textSize} font-bold items-center justify-center`,
         iconClass: "text-lg font-bold items-center justify-center",

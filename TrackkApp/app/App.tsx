@@ -46,7 +46,7 @@ export default function App() {
 
 
     return (
-      <View className="flex-1 bg-gray-900">
+      <View className="flex-1 bg-[#0F1117]">
         <View className="flex-1" style={{flex: 1}}>
           {renderScreen()}
         </View>
