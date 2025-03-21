@@ -1,11 +1,18 @@
 import React from 'react';
-import { Text, View } from 'react-native'; 
+import { Text, TextInputBase, View } from 'react-native'; 
+import { summaryStyles } from '../styles/homePageStyle';
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const HomePage = () => {
+
+  const styles = summaryStyles();
+
   return (
-    <View className="flex-1 w-full items-center justify-center">  
-      <Text className="text-2xl text-blue-300 font-bold">Home Page</Text>
+  <SafeAreaView className={styles.mainClass}>
+    <View 
+      className={styles.summaryClass} style={styles.summaryStyle}>
     </View>
+  </SafeAreaView>
   );
 }
 

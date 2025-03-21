@@ -6,6 +6,7 @@ import FirebaseTest from "./utils/FirebaseTest";
 import ProfilePage from './screens/profilePage';
 import MacroPage from './screens/foodMacroPage';
 import WorkoutsPage from './screens/workOutTrackPage';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import './globals.css';
 
 /* 
@@ -27,7 +28,7 @@ import './globals.css';
 
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('Home');
 
   const renderScreen = () => {
     switch (activeTab) {
@@ -46,11 +47,13 @@ export default function App() {
 
 
     return (
-      <View className="flex-1 bg-[#0F1117]">
-        <View className="flex-1" style={{flex: 1}}>
-          {renderScreen()}
+      <SafeAreaProvider>
+        <View className="flex-1 bg-[#0F1117]">
+          <View className="flex-1" style={{flex: 1}}>
+            {renderScreen()}
+          </View>
+          <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
         </View>
-        <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
-      </View>
+      </SafeAreaProvider>
     );
 }
