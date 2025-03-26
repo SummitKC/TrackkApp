@@ -13,12 +13,12 @@ export const summaryStyles = () => {
     return {
 
         mainContainer: "flex-1 justify-top items-center bg-transparent",
-        subContainerLeft: "flex w-2/5 h-full items-center justify-center bg-blue-500",
-        subContainerRight: "flex w-3/5 h-full items-center justify-center bg-red-500",
+        subContainerLeft: "flex w-[35%] h-full items-center justify-center bg-blue-500",
+        subContainerRight: "flex w-[65%] h-full items-center justify-center bg-red-500",
         summaryClass: "flex-row justify-center items-center bg-purple-500 rounded-lg mt-10",
         summaryStyle: { height: summaryHeight, width: summaryWidth },
         svgStyle: { height: summarySVGH, width: summarySVGW },
-        progressBar: "flex-row bg-green-500 w-5/6 items-center justify-center",
+        progressBar: "flex-row bg-green-500 w-[90%] items-center justify-center",
         progressBarStyle: { height: barHeight},
     };
 
@@ -27,8 +27,8 @@ export const summaryStyles = () => {
 export const toDoTodayStyles = () => {
 
     return {
-        mainContainerr: "flex-1 w-9/10 h-9/10 justify-top items-center bg-purple-500",
-        toDoTodayClass: "flex-row justify-center items-center bg-blue-500 rounded-lg mt-10",
+        mainContainerr: "flex-1 w-full flex flex-row flex-wrap justify-center items-center bg-purple-500",
+        section: "w-1/2 h-1/2 items-center justify-center bg-blue-500"
     }
 
 }

@@ -49,7 +49,22 @@ const HomePage = () => {
     </View>
     
     <View className={toDoStyle.mainContainerr}>
-      <Text>ToDoToday</Text>
+      <View className={toDoStyle.section}>
+        {/* Section 1 content */}
+        <Text> Add Today's Workout (Summary of the week if it fits, if not yesterday) </Text>
+    </View>
+    <View className={toDoStyle.section}>
+        {/* Section 2 content */}
+        <Text>Add Snapshot of Today's Meals and goals (Summary of the week if it fits, if not yesterday)</Text>
+    </View>
+    <View className={toDoStyle.section}>
+        {/* Section 3 content */}
+        <Text>Steps graph </Text>
+    </View>
+    <View className={toDoStyle.section}>
+        {/* Section 4 content */}
+        <Text>Weight Graph</Text>
+    </View>
     </View>
 
   </SafeAreaView>

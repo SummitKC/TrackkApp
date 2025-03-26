@@ -69,8 +69,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
                     <View className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                         <Text 
                             className="font-bold text-center"
-                            style={{ color: textColor }}
-                        >
+                            style={{ color: textColor }}>
                             {percentage}
                         </Text>
                     </View>
