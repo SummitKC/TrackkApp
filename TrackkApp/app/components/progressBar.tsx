@@ -35,7 +35,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     const percentage = `${progress}%`;
     
     return (
-        <View className="w-full" style={{ height}}>
+        <View className="w-full" style={{ height }}>
             <View 
                 className="overflow-hidden relative"
                 style={{ 
