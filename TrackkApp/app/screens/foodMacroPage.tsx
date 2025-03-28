@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, StyleSheet, Button, FlatList } from 'react-native'; 
+import { Text, View, Image, StyleSheet, Button, FlatList, ScrollView } from 'react-native'; 
 import { macroDiaplay } from '../styles/foodMacroPageStyles';
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import FireIcon from '../components/FireIcon';
@@ -48,20 +48,22 @@ const MacroPage = () => {
                 showPercentage={true}/> 
             </View>
           </View>
-          <View className = {style.subContainerBottom}>
-            <View>
-              <Text> Food </Text>
-              <Button title="Add Food" onPress={() => {}}/>
-            </View>
-            <View>
-              <Text> Today's Meals </Text>
-              {/* <FlatList
-            data={"TEst"}
-            renderItem={renderFoodItem}
-            keyExtractor={item => item.id}
-            className="w-full px-4"
-            showsVerticalScrollIndicator={false}/> */}
-          </View>
+            <View className = {style.subContainerBottom}>
+              <View className={style.bottomSubButton}>
+                <Text> Food </Text>
+              </View>
+              <View className = {style.bottomSubButton}>
+                <Button title="Add Food" onPress={() => {}}/>
+              </View>
+              <ScrollView>
+                <Text> Food List </Text>
+                {/* <FlatList
+              data={"TEst"}
+              renderItem={renderFoodItem}
+              keyExtractor={item => item.id}
+              className="w-full px-4"
+              showsVerticalScrollIndicator={false}/> */}
+            </ScrollView>
         </View>
       </SafeAreaView>
     );
